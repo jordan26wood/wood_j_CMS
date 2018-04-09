@@ -282,3 +282,9 @@ h2{
   width: 100px;
 
 }
+
+.videos video{
+  margin: 0 auto;
+  display: block;
+
+}

@@ -1,8 +1,11 @@
 <?php
-  function addMovie($poster, $title, $desc, $rating, $runtime, $release, $genre){
+  function addMovie($poster, $title, $trailer, $desc, $rating, $runtime, $release, $genre){
 include('connect.php');
 
-  if($poster['type'] == "image/jpg" || $poster['type'] == "image/jpeg")  {
+
+// CAN'T GET MOVIE TRAILER TO ADD//
+ // || $trailer['type'] == "video/mp4")
+  if($poster['type'] == "image/jpg" || $poster['type'] == "image/jpeg"  {
 
 $posterAdd = "../images/{$poster['name']}";
 
@@ -15,7 +18,7 @@ if(move_uploaded_file($poster['tmp_name'], $posterAdd)){
     return $message;
 }
 
-  $qstring = "INSERT INTO tbl_movies VALUES(NULL, '{$title}', '{$poster['name']}',  '{$desc}', '{$rating}', '{$runtime}', '{$release}')";
+  $qstring = "INSERT INTO tbl_movies VALUES(NULL, '{$title}', '{$poster['name']}',  '{$desc}', '{$rating}', '{$runtime}', '{$release}', '{$trailer['name']}')";
   $result = mysqli_query($link, $qstring);
 
     if($result){

@@ -10,6 +10,7 @@
  unset($_POST['submit']);
 
  $count = 0;
+
  $num = count($_POST);
  $qstring = "UPDATE {$tbl} SET ";
  forEach($_POST as $key => $value){

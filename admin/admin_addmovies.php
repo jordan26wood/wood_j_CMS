@@ -7,12 +7,13 @@
 	if(isset($_POST['submit'])){
 			$poster = $_FILES["poster"];
 			$title = $_POST["title"];
+			$trailer = $_POST["trailer"];
 			$desc = $_POST["desc"];
 			$rating = $_POST["rating"];
 			$runtime = $_POST["runtime"];
 			$release = $_POST["release"];
 			$genre = $_POST['genList'];
-			$result = addMovie($poster, $title, $desc, $rating, $runtime, $release, $genre);
+			$result = addMovie($poster, $title, $trailer, $desc, $rating, $runtime, $release, $genre);
 			$message = $result;
 		}
 ?>
@@ -30,6 +31,11 @@
 	<form action="admin_addmovies.php" method="post" enctype="multipart/form-data">
 		<label>Poster Image:</label>
 		<input type="file" name="poster" value="">
+
+		<br>
+
+		<label>Movie Trailer:</label>
+		<input type="file" name="trailer" value="">
 
 		<br>
 

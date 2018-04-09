@@ -13,7 +13,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title><?php echo $row['movies_title'] ?></title>
+<title>Movies></title>
 <link rel="stylesheet" href="css/foundation.css">
 <link rel="stylesheet" href="css/app.css">
 </head>
@@ -22,7 +22,8 @@
 	<?php
 		if(!is_string($getMovie)) {
 			$row=mysqli_fetch_array($getMovie);
-			echo "<div class=\"movie-inline small-12 medium-6 large-3 columns\">
+			echo "<div class=\"videos movie-inline small-12 medium-6 large-3 columns\">
+			<video  class=\"videos\" controls src=\"videos/{$row['movies_trailer']}\" ></video>
 			<img class=\"img\" src=\"images/{$row['movies_poster']}\" alt=\"{$row['movies_title']}\">
 			<h2 class=\"title\">{$row['movies_title']}</h2>
 			<h3 class=\"year\">{$row['movies_year']}</h3>
