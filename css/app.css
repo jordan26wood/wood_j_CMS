@@ -1,0 +1,284 @@
+/*Utility Class*/
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
+
+body
+{
+  padding: 0;
+	margin: 0;
+  background-color: #000;
+}
+
+
+.filterNav{
+  text-align: center;
+}
+
+.topbar{
+  padding-top: 10px;
+  background-color: #547a82;
+}
+
+
+.filterNav ul {
+  display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #547a82;
+    text-align: center;
+}
+
+.filterNav li {
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+
+}
+
+.filterNav li a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+
+}
+
+.filterNav li a:hover {
+    transition: background-color 0.3s ease;
+    background-color: #3eaca8;
+    color: #fff;
+}
+
+
+.movie-inline img{
+  margin: 0 auto;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.movie-inline a{
+font-size: 30px;
+}
+
+
+form{
+  margin-top: 100px;
+}
+
+
+#login [type=text]
+{
+  color: #fff;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #fff;
+  border-radius: 1px;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  display: block;
+  font-size: 20px;
+  background-color: #000;
+}
+
+#login [type=password]
+{
+  color: #fff;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #fff;
+  border-radius: 1px;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  display: block;
+  font-size: 20px;
+  background-color: #000;
+}
+
+#login label
+{
+  font-family:  'Source Sans Pro', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+    font-size: 35px;
+    display: block;
+    color: #FFF;
+}
+
+.button
+{
+  margin-top: 100px;
+  background-color: #000;
+  margin: 0 auto;
+  display: block;
+  color: white;
+  padding: 8px 37px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  border: 1px solid black;
+    border: 1px solid #fff;
+}
+
+.button:hover
+{
+  -webkit-transition-duration: 0.5s; /* Safari */
+  transition-duration: 0.5s;
+  background-color: white;
+ color: black;
+  border: 1px solid #fff;
+
+}
+
+.box {
+
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  width: 30%;
+}
+
+#signOut {
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: #fff;
+ color: #000;
+ padding: 14px 25px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+}
+
+#goBack {
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: #fff;
+ color: #000;
+ padding: 14px 25px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+}
+
+#panel li a {
+  margin-top: 100px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: white;
+    text-align: center;
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#panel li a:hover {
+    background-color: #008CBA;;
+    color: white;
+}
+
+.addMovie [type=text]
+{
+
+  color: #fff;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #fff;
+  border-radius: 1px;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  display: block;
+  font-size: 20px;
+  background-color: #000;
+}
+
+.addMovie [type=file]
+{
+  color: #fff;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #fff;
+  border-radius: 1px;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  display: block;
+  font-size: 20px;
+  background-color: #000;
+}
+
+
+.addMovie label
+{
+  font-family:  'Source Sans Pro', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+    font-size: 25px;
+    display: block;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.addMovie option
+{
+  font-family:  'Source Sans Pro', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+    font-size: 25px;
+    display: block;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.center{
+  margin: 0 auto;
+  display: block;
+  width: 300px;
+}
+
+.center option{
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+
+}
+
+h2{
+  font-family:  'Source Sans Pro', sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.title{
+  font-family:  'Source Sans Pro', sans-serif;
+ color: #fff;
+ text-align: left;
+
+}
+
+.year{
+  font-family:  'Source Sans Pro', sans-serif;
+  color: #fff;
+  clear: both;
+}
+
+.desc{
+  font-family:  'Source Sans Pro', sans-serif;
+  float: left;
+  color: #fff;
+}
+
+.img{
+  width: 100px;
+
+}
