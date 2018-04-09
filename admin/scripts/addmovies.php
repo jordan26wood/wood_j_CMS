@@ -18,7 +18,8 @@ if(move_uploaded_file($poster['tmp_name'], $posterAdd)){
     return $message;
 }
 
-  $qstring = "INSERT INTO tbl_movies VALUES(NULL, '{$title}', '{$poster['name']}',  '{$desc}', '{$rating}', '{$runtime}', '{$release}', '{$trailer['name']}')";
+// '{$trailer['name']}'
+  $qstring = "INSERT INTO tbl_movies VALUES(NULL, '{$title}', '{$poster['name']}',  '{$desc}', '{$rating}', '{$runtime}', '{$release}')";
   $result = mysqli_query($link, $qstring);
 
     if($result){
